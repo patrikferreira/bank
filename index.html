@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <h1>Bank</h1>
+    <!-- container -->
+    <div id="container">
+        <!-- section users -->
+        <div id="users">
+            <div id="user1" class="user">
+                <div class="imgUser">
+                    <img src="./img/user1.jpg" alt="">
+                </div>
+                <h3>Usuário 1</h3>
+                <p>CPF: 138.599.950-06</p>
+                <p id="balanceUser1">R$ 0</p>
+            </div>
+            <div id="user2" class="user">
+                <div class="imgUser">
+                    <img src="./img/user2.jpg" alt="">
+                </div>
+                <h3>Usuário 2</h3>
+                <p>CPF: 159.338.120-48</p>
+                <p id="balanceUser2">R$ 0</p>
+            </div>
+        </div>
+
+        <!-- section operations -->
+        <div id="operations">
+            <div id="block">
+                Selecione um Usuário
+            </div>
+            <h1 id="welcome"></h1>
+            <input type="number" id="moneyField" placeholder="R$ 0">
+            <div id="depositAndTake">
+                <button id="deposit" class="btnOp">depositar</button>
+                <button id="take" class="btnOp">sacar</button>
+            </div>
+            <input type="text" id="cpfUser" placeholder="CPF: 11122233300">
+            <button class="btnOp" id="transfer">transferir</button>
+        </div>
+
+        <!-- section extract -->
+        <div id="extract">
+            <h1>Extrato</h1>
+            <ul id="extractField">
+          
+            </ul>
+        </div>
+    </div>
+
+    <div id="error">
+       
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
